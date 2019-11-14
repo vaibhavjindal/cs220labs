@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/media/vaibhavj/vaibhav/CS220Labs/Lab9_1/mips_inst/top_isim_beh.exe" -prj "/media/vaibhavj/vaibhav/CS220Labs/Lab9_1/mips_inst/top_beh.prj" "work.top" "work.glbl" 

@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd_welcome.ucf -p xc3s500e-fg320-4 lcd_welcome.ngc lcd_welcome.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lcd_welcome_map.ncd lcd_welcome.ngd lcd_welcome.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_welcome_map.ncd lcd_welcome.ncd lcd_welcome.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lcd_welcome.twx lcd_welcome.ncd -o lcd_welcome.twr lcd_welcome.pcf -ucf lcd_welcome.ucf 
+bitgen -intstyle ise -f lcd_welcome.ut lcd_welcome.ncd 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd_welcome.ucf -p xc3s500e-fg320-4 lcd_welcome.ngc lcd_welcome.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lcd_welcome_map.ncd lcd_welcome.ngd lcd_welcome.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_welcome_map.ncd lcd_welcome.ncd lcd_welcome.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lcd_welcome.twx lcd_welcome.ncd -o lcd_welcome.twr lcd_welcome.pcf -ucf lcd_welcome.ucf 
+bitgen -intstyle ise -f lcd_welcome.ut lcd_welcome.ncd 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd_welcome.ucf -p xc3s500e-fg320-4 lcd_welcome.ngc lcd_welcome.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lcd_welcome_map.ncd lcd_welcome.ngd lcd_welcome.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_welcome_map.ncd lcd_welcome.ncd lcd_welcome.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lcd_welcome.twx lcd_welcome.ncd -o lcd_welcome.twr lcd_welcome.pcf -ucf lcd_welcome.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd_welcome.ucf -p xc3s500e-fg320-4 lcd_welcome.ngc lcd_welcome.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lcd_welcome_map.ncd lcd_welcome.ngd lcd_welcome.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_welcome_map.ncd lcd_welcome.ncd lcd_welcome.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lcd_welcome.twx lcd_welcome.ncd -o lcd_welcome.twr lcd_welcome.pcf -ucf lcd_welcome.ucf 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd_welcome.ucf -p xc3s500e-fg320-4 lcd_welcome.ngc lcd_welcome.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lcd_welcome_map.ncd lcd_welcome.ngd lcd_welcome.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_welcome_map.ncd lcd_welcome.ncd lcd_welcome.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lcd_welcome.twx lcd_welcome.ncd -o lcd_welcome.twr lcd_welcome.pcf -ucf lcd_welcome.ucf 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 
+xst -intstyle ise -ifn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.xst" -ofn "/media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/lcd_welcome.syr" 

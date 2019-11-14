@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/vaibhavj/vaibhav/CS220Labs/Lab6_2/walk_in_a_square_grid/top.ncd
+OUTFILE=/media/vaibhavj/vaibhav/CS220Labs/Lab6_2/walk_in_a_square_grid/top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/media/vaibhavj/vaibhav/CS220Labs/Lab6_2/walk_in_a_square_grid
+LICENSE=WebPack
+USER_INFO=211450758_0_0_676

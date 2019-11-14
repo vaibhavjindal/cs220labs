@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="21" delta="old" ><arg fmt="%s" index="1">&quot;six_bit_adder.v&quot; line 28 </arg>Zero width on based number ignored
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="21" delta="old" ><arg fmt="%s" index="1">&quot;four_bit_adder.v&quot; line 28 </arg>Zero width on based number ignored
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="21" delta="old" ><arg fmt="%s" index="1">&quot;five_bit_adder.v&quot; line 28 </arg>Zero width on based number ignored
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;four_bit_adder.v&quot; line 28 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;four_bit_adder.v&quot; line 28 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;five_bit_adder.v&quot; line 28 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;five_four_bit_adder.v&quot; line 64 </arg>Connection to input port &apos;<arg fmt="%s" index="2">b</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;six_bit_adder.v&quot; line 28 </arg>Connection to input port &apos;<arg fmt="%s" index="2">cin</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="863" delta="old" >&quot;<arg fmt="%s" index="1">five_four_bit_adder.v</arg>&quot; line <arg fmt="%d" index="2">22</arg>: Name conflict (<arg fmt="%s" index="3">&lt;Y&gt; and &lt;y&gt;, renaming Y as y_rnm0</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="863" delta="old" >&quot;<arg fmt="%s" index="1">five_four_bit_adder.v</arg>&quot; line <arg fmt="%d" index="2">24</arg>: Name conflict (<arg fmt="%s" index="3">&lt;Z&gt; and &lt;z&gt;, renaming Z as z_rnm0</arg>).
+</msg>
+
+</messages>
+

@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Mar 11 15:58:07 2019
+# Process ID: 23408
+# Log file: /media/riteshkr/vaibhav/CS220Labs/Lab7_2/lab7a2/planAhead_run_3/planAhead.log
+# Journal file: /media/riteshkr/vaibhav/CS220Labs/Lab7_2/lab7a2/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /media/riteshkr/vaibhav/CS220Labs/Lab7_2/lab7a2/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

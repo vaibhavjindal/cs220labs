@@ -1,0 +1,10 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "x[0]" LOC = L13;
+NET "x[1]" LOC = L14;
+NET "y[0]" LOC = H18;
+NET "y[1]" LOC = N17;
+NET "z[0]" LOC = F12;
+NET "z[1]" LOC = E12;
+NET "carry" LOC = E11;

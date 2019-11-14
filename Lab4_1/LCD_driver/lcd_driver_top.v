@@ -1,0 +1,32 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    16:02:52 02/04/2019 
+// Design Name: 
+// Module Name:    lcd_driver_top 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module lcd_driver_top(clk,lcd_e,lcd_rs,lcd_w,db);
+
+input clk;
+output lcd_e,lcd_rs,lcd_w;
+output [3:0]db;
+wire lcd_e,lcd_rs,lcd_w;
+wire [3:0] db;
+reg [127:0]inp1="WELCOME TO CSE, ";
+reg [127:0]inp2="IIT KANPUR      ";
+
+lcd_driver d1(clk,lcd_e,lcd_rs,lcd_w,db,inp1,inp2);
+endmodule

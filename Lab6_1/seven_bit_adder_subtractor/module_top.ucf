@@ -1,0 +1,74 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "sum[0]" LOC = F12;
+NET "sum[1]" LOC = E12;
+NET "sum[2]" LOC = E11;
+NET "sum[3]" LOC = F11;
+NET "sum[4]" LOC = C11;
+NET "sum[5]" LOC = D11;
+NET "sum[6]" LOC = E9;
+NET "overflow" LOC = F9;
+
+# PlanAhead Generated IO constraints 
+
+NET "sum[6]" IOSTANDARD = LVTTL;
+NET "sum[5]" IOSTANDARD = LVTTL;
+NET "sum[4]" IOSTANDARD = LVTTL;
+NET "sum[3]" IOSTANDARD = LVTTL;
+NET "sum[2]" IOSTANDARD = LVTTL;
+NET "sum[1]" IOSTANDARD = LVTTL;
+NET "sum[0]" IOSTANDARD = LVTTL;
+NET "sum[6]" DRIVE = 8;
+NET "sum[5]" DRIVE = 8;
+NET "sum[4]" DRIVE = 8;
+NET "sum[3]" DRIVE = 8;
+NET "sum[2]" DRIVE = 8;
+NET "sum[1]" DRIVE = 8;
+NET "sum[0]" DRIVE = 8;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "inp1" LOC = L13;
+NET "inp2" LOC = L14;
+NET "inp3" LOC = H18;
+NET "inp4" LOC = N17;
+
+# PlanAhead Generated IO constraints 
+
+NET "inp1" IOSTANDARD = LVTTL;
+NET "inp2" IOSTANDARD = LVTTL;
+NET "inp4" IOSTANDARD = LVTTL;
+NET "inp3" IOSTANDARD = LVTTL;
+NET "inp1" PULLUP;
+NET "inp2" PULLUP;
+NET "inp3" PULLUP;
+NET "inp4" PULLUP;
+NET "overflow" IOSTANDARD = LVTTL;
+NET "overflow" DRIVE = 8;
+
+# PlanAhead Generated physical constraints 
+
+NET "ROT_A" LOC = K18;
+
+# PlanAhead Generated IO constraints 
+
+NET "ROT_A" IOSTANDARD = LVTTL;
+NET "ROT_A" PULLUP;
+
+# PlanAhead Generated physical constraints 
+
+NET "ROT_B" LOC = G18;
+
+# PlanAhead Generated IO constraints 
+
+NET "ROT_B" IOSTANDARD = LVTTL;
+NET "ROT_B" PULLUP;

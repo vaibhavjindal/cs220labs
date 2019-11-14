@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.xst" -ofn "/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.syr" 
+xst -intstyle ise -ifn "/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.xst" -ofn "/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.syr" 
+xst -intstyle ise -ifn "/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.xst" -ofn "/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc module_top.ucf -p xc3s500e-fg320-4 module_top.ngc module_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o module_top_map.ncd module_top.ngd module_top.pcf 
+par -w -intstyle ise -ol high -t 1 module_top_map.ncd module_top.ncd module_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml module_top.twx module_top.ncd -o module_top.twr module_top.pcf -ucf module_top.ucf 
+bitgen -intstyle ise -f module_top.ut module_top.ncd 
+xst -intstyle ise -ifn "/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.xst" -ofn "/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc module_top.ucf -p xc3s500e-fg320-4 module_top.ngc module_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o module_top_map.ncd module_top.ngd module_top.pcf 
+par -w -intstyle ise -ol high -t 1 module_top_map.ncd module_top.ncd module_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml module_top.twx module_top.ncd -o module_top.twr module_top.pcf -ucf module_top.ucf 
+bitgen -intstyle ise -f module_top.ut module_top.ncd 

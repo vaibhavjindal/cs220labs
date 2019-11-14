@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Jan 28 15:16:21 2019
+# Process ID: 27424
+# Log file: /media/vaibhavj/28E1-CC83/CS220Labs/Lab2_3/eight_bit_comp/planAhead_run_1/planAhead.log
+# Journal file: /media/vaibhavj/28E1-CC83/CS220Labs/Lab2_3/eight_bit_comp/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /media/vaibhavj/28E1-CC83/CS220Labs/Lab2_3/eight_bit_comp/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin N17 [get_ports {inp[3]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {inp[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {inp[1]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {inp[0]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports e]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports g]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports l]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports pb1]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports pb2]
+endgroup
+startgroup
+set_property package_pin D18 [get_ports pb3]
+endgroup
+startgroup
+set_property package_pin H13 [get_ports pb4]
+endgroup
+save_constraints

@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Mar 25 14:53:51 2019
+# Process ID: 28783
+# Log file: /media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/planAhead_run_1/planAhead.log
+# Journal file: /media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /media/vaibhavj/vaibhav/CS220Labs/Lab8_1/processor/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVTTL [get_ports [list {y[3]} {y[2]} {y[1]} {y[0]}]]
+set_property pulltype PULLUP [get_ports [list {y[3]} {y[2]} {y[1]} {y[0]}]]
+startgroup
+set_property package_pin N17 [get_ports {y[3]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {y[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {y[1]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {y[0]}]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list clk]]
+set_property package_pin "" [get_ports [list  lcd4]]
+set_property iostandard LVCMOS25 [get_ports [list lcd5]]
+set_property iostandard LVCMOS25 [get_ports [list lcd4]]
+set_property iostandard LVCMOS33 [get_ports [list lcd4]]
+set_property iostandard LVCMOS33 [get_ports [list lcd5]]
+set_property iostandard LVCMOS33 [get_ports [list lcd6]]
+set_property iostandard LVCMOS33 [get_ports [list lcd7]]
+set_property iostandard LVCMOS33 [get_ports [list lcd_e]]
+set_property iostandard LVCMOS33 [get_ports [list lcd_rs]]
+set_property iostandard LVCMOS33 [get_ports [list lcd_rw]]
+set_property drive 4 [get_ports [list lcd4]]
+set_property drive 4 [get_ports [list lcd5]]
+set_property drive 4 [get_ports [list lcd6]]
+set_property drive 4 [get_ports [list lcd7]]
+set_property drive 4 [get_ports [list lcd_e]]
+set_property drive 4 [get_ports [list lcd_rs]]
+set_property drive 4 [get_ports [list lcd_rw]]
+startgroup
+set_property package_pin R15 [get_ports lcd4]
+endgroup
+startgroup
+set_property package_pin R16 [get_ports lcd5]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports lcd6]
+endgroup
+startgroup
+set_property package_pin M15 [get_ports lcd7]
+endgroup
+startgroup
+set_property package_pin M18 [get_ports lcd_e]
+endgroup
+startgroup
+set_property package_pin L18 [get_ports lcd_rs]
+endgroup
+startgroup
+set_property package_pin L17 [get_ports lcd_rw]
+endgroup
+set_property package_pin "" [get_ports [list  pb1]]
+set_property iostandard LVTTL [get_ports [list pb1]]
+set_property iostandard LVTTL [get_ports [list pb2]]
+set_property iostandard LVTTL [get_ports [list pb3]]
+set_property iostandard LVTTL [get_ports [list pb4]]
+set_property pulltype PULLUP [get_ports [list pb1]]
+set_property pulltype PULLDOWN [get_ports [list pb1]]
+set_property pulltype PULLDOWN [get_ports [list pb2]]
+set_property pulltype PULLDOWN [get_ports [list pb3]]
+set_property pulltype PULLDOWN [get_ports [list pb4]]
+startgroup
+set_property package_pin V4 [get_ports pb1]
+endgroup
+startgroup
+set_property package_pin H13 [get_ports pb2]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports pb3]
+endgroup
+startgroup
+set_property package_pin D18 [get_ports pb4]
+endgroup
+set_property package_pin "" [get_ports [list  rb]]
+set_property pulltype PULLDOWN [get_ports [list rb]]
+set_property iostandard LVTTL [get_ports [list rb]]
+startgroup
+set_property package_pin V16 [get_ports rb]
+endgroup
+save_constraints

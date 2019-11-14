@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/media/vaibhavj/vaibhav/CS220Labs/Lab4_1/LCD_driver/impact.xsl
+OUTFILE=/media/vaibhavj/vaibhav/CS220Labs/Lab4_1/LCD_driver/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/media/vaibhavj/vaibhav/CS220Labs/Lab4_1/LCD_driver
+LICENSE=iMPACT
+USER_INFO=iMPACT

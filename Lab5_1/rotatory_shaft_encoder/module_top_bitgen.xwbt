@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.ncd
+OUTFILE=/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder/module_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/media/riteshkr/vaibhav/CS220Labs/Lab5_1/rotatory_shaft_encoder
+LICENSE=WebPack
+USER_INFO=211450758_0_0_676

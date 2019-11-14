@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_2/rippling_leds/ripple_module.xst" -ofn "/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_2/rippling_leds/ripple_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ripple_module.ucf -p xc3s500e-fg320-4 ripple_module.ngc ripple_module.ngd  
+xst -intstyle ise -ifn "/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_2/rippling_leds/ripple_module.xst" -ofn "/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_2/rippling_leds/ripple_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ripple_module.ucf -p xc3s500e-fg320-4 ripple_module.ngc ripple_module.ngd  
+xst -intstyle ise -ifn "/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_2/rippling_leds/ripple_module.xst" -ofn "/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_2/rippling_leds/ripple_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ripple_module.ucf -p xc3s500e-fg320-4 ripple_module.ngc ripple_module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ripple_module_map.ncd ripple_module.ngd ripple_module.pcf 
+par -w -intstyle ise -ol high -t 1 ripple_module_map.ncd ripple_module.ncd ripple_module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ripple_module.twx ripple_module.ncd -o ripple_module.twr ripple_module.pcf -ucf ripple_module.ucf 
+bitgen -intstyle ise -f ripple_module.ut ripple_module.ncd 

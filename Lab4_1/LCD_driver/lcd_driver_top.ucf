@@ -1,0 +1,53 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd_e" LOC = M18;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd_e" IOSTANDARD = LVCMOS33;
+NET "lcd_e" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd_rs" LOC = L18;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd_rs" IOSTANDARD = LVCMOS33;
+NET "lcd_rs" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd_w" LOC = L17;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd_w" IOSTANDARD = LVCMOS33;
+NET "lcd_w" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "db[3]" LOC = M15;
+NET "db[2]" LOC = P17;
+NET "db[1]" LOC = R16;
+NET "db[0]" LOC = R15;
+
+# PlanAhead Generated IO constraints 
+
+NET "db[3]" IOSTANDARD = LVCMOS33;
+NET "db[2]" IOSTANDARD = LVCMOS33;
+NET "db[1]" IOSTANDARD = LVCMOS33;
+NET "db[0]" IOSTANDARD = LVCMOS33;
+NET "db[3]" DRIVE = 4;
+NET "db[2]" DRIVE = 4;
+NET "db[1]" DRIVE = 4;
+NET "db[0]" DRIVE = 4;

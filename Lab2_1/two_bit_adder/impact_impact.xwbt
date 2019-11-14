@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/media/vaibhavj/28E1-CC83/CS220Labs/Lab2_1/two_bit_adder/impact.xsl
+OUTFILE=/media/vaibhavj/28E1-CC83/CS220Labs/Lab2_1/two_bit_adder/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/media/vaibhavj/28E1-CC83/CS220Labs/Lab2_1/two_bit_adder
+LICENSE=iMPACT
+USER_INFO=iMPACT

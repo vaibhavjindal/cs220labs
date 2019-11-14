@@ -1,0 +1,116 @@
+ISim log file
+Running: /media/vaibhavj/vaibhav/CS220Labs/Lab10_1/asgn10/check_top_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /media/vaibhavj/vaibhav/CS220Labs/Lab10_1/asgn10/check_top_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+sum=  0
+Finished circuit initialization process.
+sum=  1
+sum=  3
+sum=  6
+sum= 10
+sum= 15
+sum= 21
+sum= 28
+sum= 36
+sum= 45
+sum= 55
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf
+yogjhhf

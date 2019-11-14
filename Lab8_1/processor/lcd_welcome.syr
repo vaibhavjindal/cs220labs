@@ -1,0 +1,1470 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: lcd_welcome.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lcd_welcome.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lcd_welcome"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : lcd_welcome
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "lcd_welcome.v" in library work
+Module <lcd_welcome> compiled
+No errors in compilation
+Analysis of file <"lcd_welcome.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <lcd_welcome> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <lcd_welcome>.
+INFO:Xst:1433 - Contents of array <first_line> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <first_line> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <first_line> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <first_line> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <second_line> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <second_line> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <second_line> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <second_line> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <lcd_welcome> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <lcd_welcome>.
+    Related source file is "lcd_welcome.v".
+WARNING:Xst:647 - Input <pb3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pb4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <wd> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <wa<4>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <second_line> is used but never assigned. This sourceless signal will be automatically connected to value 01101010011010010110111001100100011000010110110000100000001000000010000000100000001000000010000000100000001000000010000000100000.
+WARNING:Xst:646 - Signal <rd2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rd1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ra2> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:653 - Signal <ra1<4>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1781 - Signal <init_ROM> is used but never assigned. Tied to default value.
+WARNING:Xst:653 - Signal <first_line> is used but never assigned. This sourceless signal will be automatically connected to value 01110110011000010110100101100010011010000110000101110110001000000010000000100000001000000010000000100000001000000010000000100000.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <ra2> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <ra2> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_0> for signal <next_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 25                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | next_state$not0000        (positive)           |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <first_line_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 34                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | first_line_state$not0000  (positive)           |
+    | Power Up State     | 11                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <line_break_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 29                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 13                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | line_break_state$not0000  (positive)           |
+    | Power Up State     | 111                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <second_line_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 36                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | second_line_state$not0000 (positive)           |
+    | Power Up State     | 11                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <ra2>.
+    Found 14x6-bit ROM for signal <$AUX_6>.
+    Found 128x1-bit ROM for signal <lcd_rs$varindex0000> created at line 309.
+    Found 128x1-bit ROM for signal <lcd_rs$varindex0001> created at line 309.
+    Found 128x1-bit ROM for signal <lcd_rs$varindex0002> created at line 309.
+    Found 128x1-bit ROM for signal <lcd_rs$varindex0003> created at line 309.
+    Found 128x1-bit ROM for signal <lcd_rs$varindex0004> created at line 370.
+    Found 128x1-bit ROM for signal <lcd_rs$varindex0005> created at line 370.
+    Found 128x1-bit ROM for signal <lcd_rs$varindex0006> created at line 370.
+    Found 128x1-bit ROM for signal <lcd_rs$varindex0007> created at line 370.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_0$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_1$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_2$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_3$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_4$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_5$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_6$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_7$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_8$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_9$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_10$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_11$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_12$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_13$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_14$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_15$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_16$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_17$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_18$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_19$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_20$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_21$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_22$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_23$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_24$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_25$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_26$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_27$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_28$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_29$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_30$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 16-bit latch for signal <rf_31$mux0000>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit register for signal <lcd4>.
+    Found 1-bit register for signal <lcd5>.
+    Found 1-bit register for signal <lcd6>.
+    Found 1-bit register for signal <lcd7>.
+    Found 1-bit register for signal <lcd_e>.
+    Found 1-bit register for signal <lcd_rs>.
+    Found 1-bit register for signal <lcd_rw>.
+    Found 3-bit register for signal <bits>.
+    Found 8-bit adder carry out for signal <COND_11$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_12$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_13$addsub0000>.
+    Found 16-bit shifter logical left for signal <COND_5$shift0000>.
+    Found 8-bit adder carry out for signal <COND_7$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_8$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_9$addsub0000>.
+    Found 20-bit down counter for signal <counter>.
+    Found 8-bit register for signal <first_line_index>.
+    Found 8-bit adder for signal <first_line_index$addsub0000> created at line 321.
+    Found 4-bit register for signal <init_ROM_index>.
+    Found 4-bit adder for signal <init_ROM_index$addsub0000> created at line 295.
+    Found 4-bit register for signal <ra1<3:0>>.
+    Found 8-bit register for signal <second_line_index>.
+    Found 8-bit adder for signal <second_line_index$addsub0000> created at line 382.
+    Found 2-bit register for signal <state>.
+    Found 4-bit register for signal <wa<3:0>>.
+    Found 1-bit register for signal <write>.
+    Summary:
+	inferred   4 Finite State Machine(s).
+	inferred   9 ROM(s).
+	inferred   1 Counter(s).
+	inferred  41 D-type flip-flop(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred  16 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <lcd_welcome> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 9
+ 128x1-bit ROM                                         : 8
+ 14x6-bit ROM                                          : 1
+# Adders/Subtractors                                   : 11
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 2
+ 8-bit adder carry out                                 : 6
+# Counters                                             : 1
+ 20-bit down counter                                   : 1
+# Registers                                            : 20
+ 1-bit register                                        : 16
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 2
+# Latches                                              : 64
+ 16-bit latch                                          : 64
+# Multiplexers                                         : 1
+ 16-bit 32-to-1 multiplexer                            : 1
+# Logic shifters                                       : 1
+ 16-bit shifter logical left                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <second_line_state/FSM> on signal <second_line_state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 01
+ 01    | 10
+ 10    | 11
+ 11    | 00
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <line_break_state/FSM> on signal <line_break_state[1:7]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 0000010
+ 001   | 0000100
+ 010   | 0001000
+ 011   | 0010000
+ 100   | 0100000
+ 101   | 1000000
+ 111   | 0000001
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <first_line_state/FSM> on signal <first_line_state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 01
+ 01    | 10
+ 10    | 11
+ 11    | 00
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <next_state/FSM> on signal <next_state[1:5]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00001
+ 001   | 00100
+ 010   | 01000
+ 011   | 10000
+ 100   | 00010
+-------------------
+WARNING:Xst:1426 - The value init of the FF/Latch write hinder the constant cleaning in the block lcd_welcome.
+   You should achieve better results by setting this init to 0.
+
+Synthesizing (advanced) Unit <lcd_welcome>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__AUX_6> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_lcd_rs_varindex0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_lcd_rs_varindex0004> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <lcd_welcome> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 4
+# ROMs                                                 : 9
+ 128x1-bit ROM                                         : 8
+ 14x6-bit ROM                                          : 1
+# Adders/Subtractors                                   : 11
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 2
+ 8-bit adder carry out                                 : 6
+# Counters                                             : 1
+ 20-bit down counter                                   : 1
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+# Latches                                              : 64
+ 16-bit latch                                          : 64
+# Multiplexers                                         : 1
+ 16-bit 32-to-1 multiplexer                            : 1
+# Logic shifters                                       : 1
+ 16-bit shifter logical left                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch write hinder the constant cleaning in the block lcd_welcome.
+   You should achieve better results by setting this init to 0.
+INFO:Xst:2261 - The FF/Latch <15> in Unit <LPM_LATCH_545> is equivalent to the following 15 FFs/Latches, which will be removed : <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> <3> <2> <1> <0> 
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <LPM_LATCH_545>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_rw> (without init value) has a constant value of 0 in block <lcd_welcome>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <first_line_index_0> has a constant value of 0 in block <lcd_welcome>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <first_line_index_1> has a constant value of 0 in block <lcd_welcome>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <second_line_index_0> has a constant value of 0 in block <lcd_welcome>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <second_line_index_1> has a constant value of 0 in block <lcd_welcome>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <wa_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <bits_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <bits_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <bits_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <wa_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <wa_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <wa_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <ra1_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <ra1_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <ra1_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <ra1_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_mux0000_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_31_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_30_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_29_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_28_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_27_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_26_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_25_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_24_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_23_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_22_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_21_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_20_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_19_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_18_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_17_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_16_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_15_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_14_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_13_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_12_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_11_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_10_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_9_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_8_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_7_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_6_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_5_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_4_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_3_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_2_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_1_15> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_0> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_1> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_2> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_3> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_4> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_5> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_6> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_7> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_8> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_9> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_10> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_11> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_12> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_13> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_14> of sequential type is unconnected in block <lcd_welcome>.
+WARNING:Xst:2677 - Node <rf_0_15> of sequential type is unconnected in block <lcd_welcome>.
+
+Optimizing unit <lcd_welcome> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lcd_welcome, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : lcd_welcome.ngr
+Top Level Output File Name         : lcd_welcome
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 264
+#      GND                         : 1
+#      INV                         : 19
+#      LUT1                        : 1
+#      LUT2                        : 35
+#      LUT2_D                      : 2
+#      LUT2_L                      : 3
+#      LUT3                        : 24
+#      LUT3_D                      : 4
+#      LUT3_L                      : 9
+#      LUT4                        : 85
+#      LUT4_D                      : 10
+#      LUT4_L                      : 21
+#      MUXCY                       : 24
+#      MUXF5                       : 5
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 59
+#      FD                          : 1
+#      FDE                         : 58
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 7
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      116  out of   4656     2%  
+ Number of Slice Flip Flops:             59  out of   9312     0%  
+ Number of 4 input LUTs:                213  out of   9312     2%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                   9  out of    232     3%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+pb2                                | BUFGP                  | 1     |
+clk                                | BUFGP                  | 58    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.612ns (Maximum Frequency: 131.372MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.496ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.612ns (frequency: 131.372MHz)
+  Total number of paths / destination ports: 3142 / 96
+-------------------------------------------------------------------------
+Delay:               7.612ns (Levels of Logic = 5)
+  Source:            line_break_state_FSM_FFd3 (FF)
+  Destination:       lcd7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: line_break_state_FSM_FFd3 to lcd7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.591   1.052  line_break_state_FSM_FFd3 (line_break_state_FSM_FFd3)
+     LUT3_L:I2->LO         1   0.704   0.104  lcd_e_or0006_SW0 (N161)
+     LUT4:I3->O           13   0.704   1.018  lcd_e_or0006 (lcd_e_or0006)
+     LUT4:I2->O            1   0.704   0.595  lcd7_mux000060 (lcd7_mux000060)
+     LUT4:I0->O            1   0.704   0.424  lcd7_mux0000122_SW0_SW0_SW0 (N73)
+     LUT4:I3->O            1   0.704   0.000  lcd7_mux0000122 (lcd7_mux0000)
+     FDE:D                     0.308          lcd7
+    ----------------------------------------
+    Total                      7.612ns (4.419ns logic, 3.193ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.496ns (Levels of Logic = 1)
+  Source:            lcd_e (FF)
+  Destination:       lcd_e (PAD)
+  Source Clock:      clk rising
+
+  Data Path: lcd_e to lcd_e
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.633  lcd_e (lcd_e_OBUF)
+     OBUF:I->O                 3.272          lcd_e_OBUF (lcd_e)
+    ----------------------------------------
+    Total                      4.496ns (3.863ns logic, 0.633ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.24 secs
+ 
+--> 
+
+
+Total memory usage is 602044 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  863 (   0 filtered)
+Number of infos    :   77 (   0 filtered)
+

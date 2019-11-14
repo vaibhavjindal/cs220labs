@@ -1,0 +1,442 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "module_1.v" in library work
+Compiling verilog file "top.v" in library work
+Module <module_1> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <rot_event_detect> in library <work>.
+
+Analyzing hierarchy for module <module_1> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <rot_event_detect> in library <work>.
+Module <rot_event_detect> is correct for synthesis.
+ 
+Analyzing module <module_1> in library <work>.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <microcode> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <module_1> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rot_event_detect>.
+    Related source file is "../../Lab6_2/walk_in_a_square_grid/rot_event_detect.v".
+    Found 1-bit register for signal <rotation_event>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <rot_event_detect> synthesized.
+
+
+Synthesizing Unit <module_1>.
+    Related source file is "module_1.v".
+WARNING:Xst:1781 - Signal <microcode> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <dr2> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <dr1> is used but never assigned. Tied to default value.
+    Found 4x8-bit ROM for signal <y$rom0000>.
+    Found 4x8-bit ROM for signal <prev_inp$rom0000>.
+    Found 13x3-bit ROM for signal <$varindex0000> created at line 75.
+    Found 5-bit register for signal <state>.
+    Found 27-bit up counter for signal <counter>.
+    Found 2-bit register for signal <prev_inp>.
+    Found 1-bit register for signal <prev_rotation_event>.
+    Found 5-bit adder for signal <state$share0000>.
+    Summary:
+	inferred   3 ROM(s).
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <module_1> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 13x3-bit ROM                                          : 1
+ 4x8-bit ROM                                           : 2
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 5-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <module_1>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_prev_inp_rom0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3021 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <state> prevents it from being combined with the ROM <Mrom__varindex0000> for implementation as read-only block RAM.
+Unit <module_1> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 13x3-bit ROM                                          : 1
+ 4x8-bit ROM                                           : 2
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <module_1> ...
+WARNING:Xst:2677 - Node <D1/state_4> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 118
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 26
+#      LUT2                        : 5
+#      LUT3                        : 3
+#      LUT4                        : 20
+#      LUT4_L                      : 6
+#      MUXCY                       : 26
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 35
+#      FD                          : 1
+#      FDE                         : 2
+#      FDR                         : 27
+#      FDRE                        : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 4
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       32  out of   4656     0%  
+ Number of Slice Flip Flops:             35  out of   9312     0%  
+ Number of 4 input LUTs:                 61  out of   9312     0%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    232     3%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 35    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.562ns (Maximum Frequency: 152.401MHz)
+   Minimum input arrival time before clock: 6.087ns
+   Maximum output required time after clock: 4.846ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.562ns (frequency: 152.401MHz)
+  Total number of paths / destination ports: 1484 / 69
+-------------------------------------------------------------------------
+Delay:               6.562ns (Levels of Logic = 3)
+  Source:            D1/counter_13 (FF)
+  Destination:       D1/counter_26 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: D1/counter_13 to D1/counter_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  D1/counter_13 (D1/counter_13)
+     LUT4:I0->O            1   0.704   0.499  D1/counter_or000071 (D1/counter_or000071)
+     LUT4:I1->O            3   0.704   0.566  D1/counter_or0000115 (D1/counter_or0000115)
+     LUT4:I2->O           27   0.704   1.261  D1/counter_or0000142 (D1/counter_or0000)
+     FDR:R                     0.911          D1/counter_0
+    ----------------------------------------
+    Total                      6.562ns (3.614ns logic, 2.948ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 15 / 7
+-------------------------------------------------------------------------
+Offset:              6.087ns (Levels of Logic = 5)
+  Source:            y<0> (PAD)
+  Destination:       D1/state_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: y<0> to D1/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  y_0_IBUF (y_0_IBUF)
+     LUT4:I0->O            1   0.704   0.455  D1/state_mux0000<0>40_SW1 (N12)
+     LUT4_L:I2->LO         1   0.704   0.104  D1/state_mux0000<0>40 (D1/state_mux0000<0>40)
+     LUT4:I3->O            1   0.704   0.424  D1/state_mux0000<0>64 (D1/state_mux0000<0>64)
+     LUT4:I3->O            1   0.704   0.000  D1/state_mux0000<0>80 (D1/state_mux0000<0>)
+     FDRE:D                    0.308          D1/state_0
+    ----------------------------------------
+    Total                      6.087ns (4.342ns logic, 1.745ns route)
+                                       (71.3% logic, 28.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.846ns (Levels of Logic = 1)
+  Source:            D1/state_1 (FF)
+  Destination:       state<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: D1/state_1 to state<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            13   0.591   0.983  D1/state_1 (D1/state_1)
+     OBUF:I->O                 3.272          state_1_OBUF (state<1>)
+    ----------------------------------------
+    Total                      4.846ns (3.863ns logic, 0.983ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.89 secs
+ 
+--> 
+
+
+Total memory usage is 516180 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

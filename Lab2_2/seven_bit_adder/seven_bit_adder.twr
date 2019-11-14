@@ -1,0 +1,148 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml seven_bit_adder.twx seven_bit_adder.ncd -o
+seven_bit_adder.twr seven_bit_adder.pcf -ucf seven_bit_adder.ucf
+
+Design file:              seven_bit_adder.ncd
+Physical constraint file: seven_bit_adder.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock pb1
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+y<0>        |    0.255(R)|    1.450(R)|pb1_BUFGP         |   0.000|
+y<1>        |    0.799(R)|    1.015(R)|pb1_BUFGP         |   0.000|
+y<2>        |    1.017(R)|    0.840(R)|pb1_BUFGP         |   0.000|
+y<3>        |    0.531(R)|    1.229(R)|pb1_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock pb2
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+y<0>        |   -0.475(R)|    2.616(R)|pb2_BUFGP         |   0.000|
+y<1>        |    0.321(R)|    1.980(R)|pb2_BUFGP         |   0.000|
+y<2>        |   -0.554(R)|    2.693(R)|pb2_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock pb3
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+y<0>        |   -0.461(R)|    2.346(R)|pb3_BUFGP         |   0.000|
+y<1>        |    0.640(R)|    1.465(R)|pb3_BUFGP         |   0.000|
+y<2>        |   -0.886(R)|    2.687(R)|pb3_BUFGP         |   0.000|
+y<3>        |    0.709(R)|    1.411(R)|pb3_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock pb4
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+y<0>        |   -0.143(R)|    2.072(R)|pb4_BUFGP         |   0.000|
+y<1>        |    0.327(R)|    1.695(R)|pb4_BUFGP         |   0.000|
+y<2>        |   -0.474(R)|    2.350(R)|pb4_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock pb1 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+cout        |   16.443(R)|pb1_BUFGP         |   0.000|
+z<0>        |   11.000(R)|pb1_BUFGP         |   0.000|
+z<1>        |   11.186(R)|pb1_BUFGP         |   0.000|
+z<2>        |   12.979(R)|pb1_BUFGP         |   0.000|
+z<3>        |   13.005(R)|pb1_BUFGP         |   0.000|
+z<4>        |   14.338(R)|pb1_BUFGP         |   0.000|
+z<5>        |   15.133(R)|pb1_BUFGP         |   0.000|
+z<6>        |   16.726(R)|pb1_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock pb2 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+cout        |   15.232(R)|pb2_BUFGP         |   0.000|
+z<4>        |   13.022(R)|pb2_BUFGP         |   0.000|
+z<5>        |   13.882(R)|pb2_BUFGP         |   0.000|
+z<6>        |   15.515(R)|pb2_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock pb3 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+cout        |   17.207(R)|pb3_BUFGP         |   0.000|
+z<0>        |   11.753(R)|pb3_BUFGP         |   0.000|
+z<1>        |   11.974(R)|pb3_BUFGP         |   0.000|
+z<2>        |   13.743(R)|pb3_BUFGP         |   0.000|
+z<3>        |   13.769(R)|pb3_BUFGP         |   0.000|
+z<4>        |   15.102(R)|pb3_BUFGP         |   0.000|
+z<5>        |   15.897(R)|pb3_BUFGP         |   0.000|
+z<6>        |   17.490(R)|pb3_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock pb4 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+cout        |   14.489(R)|pb4_BUFGP         |   0.000|
+z<4>        |   12.284(R)|pb4_BUFGP         |   0.000|
+z<5>        |   13.139(R)|pb4_BUFGP         |   0.000|
+z<6>        |   14.772(R)|pb4_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+
+Analysis completed Mon Jan 28 15:49:59 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 347 MB
+
+
+

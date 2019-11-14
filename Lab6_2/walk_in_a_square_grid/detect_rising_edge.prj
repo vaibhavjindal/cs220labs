@@ -1,0 +1,3 @@
+verilog work "one_bit_add_sub.v"
+verilog work "five_bit_add_sub.v"
+verilog work "detect_rising_edge.v"

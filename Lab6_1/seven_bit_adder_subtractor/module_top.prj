@@ -1,0 +1,4 @@
+verilog work "one_bit_add_sub.v"
+verilog work "rot_event_detect.v"
+verilog work "detect_rising_edge.v"
+verilog work "module_top.v"

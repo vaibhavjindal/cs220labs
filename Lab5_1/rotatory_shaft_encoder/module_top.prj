@@ -1,0 +1,3 @@
+verilog work "module_2.v"
+verilog work "module_1.v"
+verilog work "module_top.v"

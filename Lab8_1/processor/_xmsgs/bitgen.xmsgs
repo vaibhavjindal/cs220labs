@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="PhysDesignRules" num="368" delta="old" >The signal &lt;<arg fmt="%s" index="1">lcd7_OBUF</arg>&gt; is incomplete. The signal is not driven by any source pin in the design.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="368" delta="old" >The signal &lt;<arg fmt="%s" index="1">lcd_rw_OBUF</arg>&gt; is incomplete. The signal is not driven by any source pin in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">clk_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">rb_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">y&lt;0&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">y&lt;1&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">y&lt;2&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">y&lt;3&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="368" delta="old" >The signal &lt;<arg fmt="%s" index="1">lcd_e_OBUF</arg>&gt; is incomplete. The signal is not driven by any source pin in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">pb1_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">pb2_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">pb3_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">pb4_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="368" delta="old" >The signal &lt;<arg fmt="%s" index="1">lcd4_OBUF</arg>&gt; is incomplete. The signal is not driven by any source pin in the design.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="368" delta="old" >The signal &lt;<arg fmt="%s" index="1">lcd5_OBUF</arg>&gt; is incomplete. The signal is not driven by any source pin in the design.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="368" delta="old" >The signal &lt;<arg fmt="%s" index="1">lcd_rs_OBUF</arg>&gt; is incomplete. The signal is not driven by any source pin in the design.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="368" delta="old" >The signal &lt;<arg fmt="%s" index="1">lcd6_OBUF</arg>&gt; is incomplete. The signal is not driven by any source pin in the design.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="10" delta="old" >The network &lt;<arg fmt="%s" index="1">lcd7_OBUF</arg>&gt; is completely unrouted.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="10" delta="old" >The network &lt;<arg fmt="%s" index="1">lcd_rw_OBUF</arg>&gt; is completely unrouted.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="10" delta="old" >The network &lt;<arg fmt="%s" index="1">lcd_e_OBUF</arg>&gt; is completely unrouted.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="10" delta="old" >The network &lt;<arg fmt="%s" index="1">lcd4_OBUF</arg>&gt; is completely unrouted.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="10" delta="old" >The network &lt;<arg fmt="%s" index="1">lcd5_OBUF</arg>&gt; is completely unrouted.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="10" delta="old" >The network &lt;<arg fmt="%s" index="1">lcd_rs_OBUF</arg>&gt; is completely unrouted.
+</msg>
+
+<msg type="error" file="PhysDesignRules" num="10" delta="old" >The network &lt;<arg fmt="%s" index="1">lcd6_OBUF</arg>&gt; is completely unrouted.
+</msg>
+
+<msg type="error" file="Bitgen" num="25" delta="old" >DRC detected <arg fmt="%d" index="1">14</arg> errors and <arg fmt="%d" index="2">10</arg> warnings.  Please see the previously displayed individual error or warning messages for more details.
+</msg>
+
+</messages>
+

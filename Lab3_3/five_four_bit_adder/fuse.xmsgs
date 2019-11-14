@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_3/five_four_bit_adder/six_bit_adder.v" Line 28: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_3/five_four_bit_adder/four_bit_adder.v" Line 28: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_3/five_four_bit_adder/five_bit_adder.v" Line 28: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_3/five_four_bit_adder/five_four_bit_adder.v" Line 64: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_3/five_four_bit_adder/four_bit_adder.v" Line 28: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_3/five_four_bit_adder/five_bit_adder.v" Line 28: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_3/five_four_bit_adder/six_bit_adder.v" Line 28: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/media/vaibhavj/28E1-CC83/CS220Labs/Lab3_3/five_four_bit_adder/five_four_bit_adder.v" Line 64: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">b</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">68</arg>-bit.
+</msg>
+
+</messages>
+

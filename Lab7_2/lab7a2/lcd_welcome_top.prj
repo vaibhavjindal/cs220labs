@@ -1,0 +1,2 @@
+verilog work "lcd_welcome.v"
+verilog work "lcd_welcome_top.v"

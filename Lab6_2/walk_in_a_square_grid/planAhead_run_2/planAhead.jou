@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Mar  4 14:24:46 2019
+# Process ID: 30415
+# Log file: /media/vaibhavj/vaibhav/CS220Labs/Lab6_2/walk_in_a_square_grid/planAhead_run_2/planAhead.log
+# Journal file: /media/vaibhavj/vaibhav/CS220Labs/Lab6_2/walk_in_a_square_grid/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /media/vaibhavj/vaibhav/CS220Labs/Lab6_2/walk_in_a_square_grid/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C11 [get_ports {sumy[0]}]
+endgroup
+save_constraints

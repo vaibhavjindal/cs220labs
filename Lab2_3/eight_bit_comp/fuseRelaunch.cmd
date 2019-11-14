@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/media/vaibhavj/28E1-CC83/CS220Labs/Lab2_3/eight_bit_comp/eight_bit_comp_top_isim_beh.exe" -prj "/media/vaibhavj/28E1-CC83/CS220Labs/Lab2_3/eight_bit_comp/eight_bit_comp_top_beh.prj" "work.eight_bit_comp_top" "work.glbl" 
